@@ -33,4 +33,6 @@ jobs:
       run: |
         docker build -t bekir:$IMAGE_TAG .
         docker tag bekir:$IMAGE_TAG 313422618945.dkr.ecr.eu-central-1.amazonaws.com/bekir:$IMAGE_TAG
+        docker tag bekir:$IMAGE_TAG 313422618945.dkr.ecr.eu-central-1.amazonaws.com/bekir:latest
         docker push 313422618945.dkr.ecr.eu-central-1.amazonaws.com/bekir:$IMAGE_TAG
+        docker push 313422618945.dkr.ecr.eu-central-1.amazonaws.com/bekir:latest
